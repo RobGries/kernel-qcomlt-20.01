@@ -214,25 +214,6 @@
                         };
                 };
 
-/*		spmi@200f000 {
-			pm8916@0 {
-				gpios@c000 {
-					gpio-line-names =
-						"USR_LED_3_CTRL",
-						"USR_LED_4_CTRL",
-						"USB_HUB_RESET_N_PM",
-						"USB_SW_SEL_PM";
-				};
-				mpps@a000 {
-					gpio-line-names =
-						"VDD_PX_BIAS",
-						"WLAN_LED_CTRL",
-						"BT_LED_CTRL",
-						"GPIO-F"; /* LS_EXP_GPIO_F, LSEC pin 28 */
-				};
-			};
-		};
-*/
 		wcnss@a21b000 {
 			status = "okay";
 			firmware-name = "qcom/msm8916/wcnss.mdt";
