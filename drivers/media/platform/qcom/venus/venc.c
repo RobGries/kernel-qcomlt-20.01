@@ -709,7 +709,8 @@ static int venc_set_properties(struct venus_inst *inst)
 	 * n > 1 - every n-th I-frame will be IDR frame
 	 */
 	ptype = HFI_PROPERTY_CONFIG_VENC_IDR_PERIOD;
-	idrp.idr_period = 0;
+	//we need every I frame to be IDR to allow the hardware codec to work with our platform!
+	idrp.idr_period = 1;
 	ret = hfi_session_set_property(inst, ptype, &idrp);
 	if (ret)
 		return ret;
