@@ -129,8 +129,6 @@
 			srp-disable;
 			dr_mode = "host";
 			pinctrl-names = "default", "device";
-			pinctrl-0 = <&usb_sw_sel_pm &usb_hub_reset_pm>;
-			pinctrl-1 = <&usb_sw_sel_pm_device &usb_hub_reset_pm_device>;
 			ulpi {
 				phy {
 					v1p8-supply = <&pm8916_l7>;
